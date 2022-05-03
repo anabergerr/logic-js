@@ -2,13 +2,17 @@
 // Return the number of times a occurs in b
 
 const charactersInString = (string,letter) => {
-    const stringSplit = string.split(letter).length - 1;
-    return stringSplit
+    if(string && letter) {
+        const stringSplit = string.split(letter).length - 1;
+        return stringSplit
+    }
+    return 'add param'
+    
     //const manyTimesLetter = stringSplit.filter((letter) => letter === letra)
     //return manyTimesLetter.length
 }
 
-console.log(typeof charactersInString);
+console.log(charactersInString());
 
 module.exports = {
     charactersInString,
