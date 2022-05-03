@@ -5,5 +5,8 @@
 const reverseObject = (obj) => {
     const newObj = {}
     const keys = Object.keys(obj)
-    
+    // const obj = {name: 'ana', idade: 24} -> obj[name] -> isso me retorna 'ana' 
+    keys.forEach(key => newObj[obj[key]] = key)
+    return newObj
+
 }
