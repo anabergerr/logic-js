@@ -7,12 +7,9 @@ const charactersInString = (string,letter) => {
         return stringSplit
     }
     return 'add param'
-    
     //const manyTimesLetter = stringSplit.filter((letter) => letter === letra)
     //return manyTimesLetter.length
 }
-
-console.log(charactersInString());
 
 module.exports = {
     charactersInString,
